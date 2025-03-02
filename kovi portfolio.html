@@ -34,6 +34,7 @@
         .hero h1 {
             font-size: 4.5em;
             margin: 0;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
         }
         .hero p {
             font-size: 1.8em;
@@ -55,10 +56,12 @@
             font-size: 1.3em;
             font-weight: bold;
             transition: 0.3s;
+            box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.2);
         }
         .buttons a:hover {
             background: #ffcc00;
             transform: scale(1.1);
+            box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.4);
         }
         .section {
             padding: 80px 10%;
@@ -68,7 +71,7 @@
         }
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
             align-items: center;
             text-align: center;
@@ -79,22 +82,27 @@
             border-radius: 15px;
             transition: transform 0.3s ease-in-out, box-shadow 0.3s;
             opacity: 0;
-            transform: translateX(-100px);
-            animation: slideIn 1s ease-in-out forwards;
+            transform: translateY(30px);
+            animation: slideUp 1s ease-in-out forwards;
         }
         .card:hover {
             transform: scale(1.05);
-            box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.2);
+            box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.3);
         }
         @keyframes slideIn {
             from { opacity: 0; transform: translateX(-100px); }
             to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
         }
         footer {
             background: #111827;
             padding: 30px;
             margin-top: 50px;
             font-size: 1.1em;
+            box-shadow: 0px -5px 10px rgba(255, 255, 255, 0.1);
         }
         @media (max-width: 768px) {
             .hero h1 {
