@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viswas Chowdary Kovi | AI/ML Portfolio</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #0f172a;
+            color: #ffffff;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(90deg, #ff6f61, #de4daa);
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .hero h1 {
+            font-size: 4.5em;
+            margin: 0;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+        }
+        .hero p {
+            font-size: 1.8em;
+            margin-top: 10px;
+        }
+        .buttons {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        .buttons a {
+            background: #ffffff;
+            color: #0f172a;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 1.3em;
+            font-weight: bold;
+            transition: 0.3s;
+            box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.2);
+        }
+        .buttons a:hover {
+            background: #ffcc00;
+            transform: scale(1.1);
+            box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.4);
+        }
+        .section {
+            padding: 80px 10%;
+            opacity: 0;
+            transform: translateX(-100px);
+            animation: slideIn 1s ease-in-out forwards;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            align-items: center;
+            text-align: center;
+        }
+        .card {
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 15px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: slideUp 1s ease-in-out forwards;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.3);
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-100px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        footer {
+            background: #111827;
+            padding: 30px;
+            margin-top: 50px;
+            font-size: 1.1em;
+            box-shadow: 0px -5px 10px rgba(255, 255, 255, 0.1);
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 3em;
+            }
+            .hero p {
+                font-size: 1.4em;
+            }
+            .buttons a {
+                font-size: 1em;
+                padding: 10px 20px;
+            }
+            .section {
+                padding: 60px 5%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Viswas Chowdary Kovi</h1>
+        <p>AI & Machine Learning Engineer</p>
+        <div class="buttons">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#awards">Awards</a>
+            <a href="#languages">Languages</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <section id="about" class="section">
+        <h2>Professional Summary</h2>
+        <p>AI & Machine Learning Engineer specializing in generative AI, deep learning, and NLP. Experienced in developing and optimizing advanced AI models, including GANs, transformers, and LLMs. Skilled in Python, TensorFlow, PyTorch, cloud platforms, and model deployment. Passionate about AI-driven innovation, automation, and enhancing user experiences across industries.</p>
+    </section>
+    
+    <section id="experience" class="section">
+        <h2>Professional Experience</h2>
+        <div class="timeline">
+            <div class="card"><h3>Design Engineer Intern - Amara Raja Power Systems</h3><p>Utilized Solid Edge for 3D modeling and design optimization, improving product development efficiency. Developed AI-driven automation tools to optimize manufacturing workflows, reducing inefficiencies by 15%. Implemented predictive maintenance algorithms, enhancing system reliability and reducing downtime.</p></div>
+            <div class="card"><h3>Web Developer Intern - Webengers</h3><p>Designed and built responsive, user-centric web applications using React.js, React Native, HTML, CSS, JavaScript. Optimized web applications, improving performance by 30% through advanced front-end techniques.</p></div>
+            <div class="card"><h3>Data Science & Business Analytics Intern - The Sparks Foundation</h3><p>Developed predictive analytics models, improving business decision-making by 20%. Performed data cleaning, visualization, and trend analysis to support strategic insights.</p></div>
+            <div class="card"><h3>Data Science Intern - Smart Internz</h3><p>Built supervised and unsupervised machine learning models to optimize data-driven decision-making. Applied feature engineering and hyperparameter tuning, achieving 10% higher model accuracy.</p></div>
+        </div>
+    </section>
+
+    <section id="education" class="section">
+        <h2>Education</h2>
+        <p>Bachelor of Technology - Mechanical Engineering, VIT University (2019-2023)</p>
+    </section>
+
+    <section id="certifications" class="section">
+        <h2>Certifications</h2>
+        <div class="grid">
+            <div class="card">Machine Learning - Stanford University</div>
+            <div class="card">Python Data Structures - University of Michigan</div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="grid">
+            <div class="card"><strong>AI & Machine Learning</strong><br>Generative AI (GANs, VAEs, LLMs), Deep Learning, NLP, Computer Vision, Transfer Learning</div>
+            <div class="card"><strong>Programming</strong><br>Python, TensorFlow, PyTorch, Keras, OpenCV, Flask, FastAPI</div>
+            <div class="card"><strong>Cloud & Data Engineering</strong><br>AWS (S3, EC2, Lambda), GCP, Docker, Kubernetes, Apache Spark</div>
+            <div class="card"><strong>Web Development</strong><br>React.js, React Native, HTML, CSS, JavaScript, REST APIs</div>
+            <div class="card"><strong>Tools & Frameworks</strong><br>Web Scraping (BeautifulSoup, Selenium), Data Pipelines, Model Deployment</div>
+        </div>
+    </section>
+    
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="grid">
+            <div class="card">Car Damage Detection - AI-powered damage detection with 92% accuracy.</div>
+            <div class="card">RAG-Based Gen AI Chatbot - Context-aware chatbot using RAG and vector databases.</div>
+            <div class="card">AI Filters for Image Processing - AI-driven image inpainting and restoration.</div>
+        </div>
+    </section>
+    
+    <section id="awards" class="section">
+        <h2>Awards</h2>
+        <div class="grid">
+            <div class="card">Runner-Up, VIT Chennai Hackathon - Developed an AI-powered automation tool optimizing workflow efficiency.</div>
+        </div>
+    </section>
+    
+    <section id="languages" class="section">
+        <h2>Languages</h2>
+        <p>Telugu - Native</p>
+        <p>English - Proficient</p>
+        <p>Hindi - Conversational</p>
+    </section>
+    
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:viswaschowdarykovi@gmail.com">viswaschowdarykovi@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/viswas-chowdary-kovi-7270212a0">LinkedIn Profile</a></p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Viswas Chowdary Kovi. All rights reserved.</p>
+    </footer>
+</body>
+</html>
